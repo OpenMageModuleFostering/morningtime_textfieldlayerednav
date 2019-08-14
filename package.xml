@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+    <name>Morningtime_TextfieldLayeredNav</name>
+    <version>1.3.2.4.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Until now, you could only use Dropdown and Multiselect attributes for layered navigation. This extension adds a textfield for layered navigation.</summary>
+    <description>== WHAT DOES IT DO? ==
+This is an admin module only. You can setup an attribute with "Textfield for Filter" as type. On the product page, this looks like a textfield. Data entered can be used in Layered Navigation, just like a Dropdown or Multiselect.
+
+I used this module to add geographic regions for hundreds of wine bottles. We wanted the regions to be filterable, but we could not use a Dropdown attribute. See screenshot for better understanding.
+
+== INSTALLATION ==
+- Get key from Magento Connect
+- Install via Connect Manager
+- Refresh cache
+- Re-login to admin
+
+== CONFIGURATION ==
+No config settings.
+
+== USAGE ==
+Add a new product attribute and choose "Textfield for Filter" instead of Dropdown or Multiselect. Add the attribute to a set, and go to the product edit page. You will see a regular textfield, but the data is stored as a Dropdown and can be used for layered navigation.
+
+Don't forget to rebuil search index (cache) after adding a new attribute!
+
+== CUSTOMIZATION ==
+No options available.</description>
+    <notes>Stable release.</notes>
+    <authors><author><name>Mathijs Koenraadt</name><user>auto-converted</user><email>info@morningtime.com</email></author></authors>
+    <date>2009-10-22</date>
+    <time>12:18:01</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="morningtime"><dir name="textfieldlayerednav"><dir name="catalog"><dir name="product"><dir name="attribute"><file name="js.phtml" hash="f4aa08606a852b36242d438b76edd0f9"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Morningtime_TextfieldLayeredNav.xml" hash="c98afcfe1ac288def1c3886683b9ff5f"/></dir></target><target name="magecommunity"><dir name="Morningtime"><dir name="TextfieldLayeredNav"><dir name="Block"><dir name="Adminhtml"><dir name="Catalog"><dir name="Product"><dir name="Attribute"><dir name="Edit"><dir name="Tab"><file name="Main.php" hash="6d81230b628beee5841cc4efab127907"/><file name="Options.php" hash="697f471d3cac1a8d964c6480353a228d"/></dir></dir></dir><dir name="Edit"><dir name="Tab"><file name="Attributes.php" hash="f0d6477f726252efb8276df1a5de8c7b"/></dir></dir></dir></dir></dir><dir name="CatalogSearch"><dir name="Advanced"><file name="Form.php" hash="2fa88b7ef0aed62706c30c72e1c88634"/></dir></dir><dir name="Catalog"><dir name="Product"><dir name="Compare"><file name="List.php" hash="f4c56171dc5904dc4991aad8a5052d28"/></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Catalog"><dir name="Product"><file name="AttributeController.php" hash="9473d71eee6078b948c2b3aae0d18872"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="451ca647c2c5319372ea5e84231c099c"/></dir><dir name="Model"><dir name="Catalog"><file name="Product.php" hash="e0609562271fbe93de954d0f019478ef"/><dir name="Entity"><file name="Attribute.php" hash="5e71f3b65c4367fcfa17b44f1ab12952"/></dir><dir name="Resource"><dir name="Eav"><file name="Attribute.php" hash="b8c817065c14d15588115f38eff26b99"/><dir name="Mysql4"><file name="Product.php" hash="9b14de136d2981c8362f9bae23486267"/></dir></dir></dir></dir><dir name="CatalogIndex"><dir name="Indexer"><file name="Eav.php" hash="8fd2314cee485d8f61ff709710c219b7"/></dir></dir><dir name="CatalogRule"><dir name="Rule"><dir name="Condition"><file name="Product.php" hash="dd1dbddfdf5339d33bc72c50273ee897"/></dir></dir></dir><dir name="CatalogSearch"><file name="Advanced.php" hash="440941cde49df7f907e573e1cc40174d"/><dir name="Mysql4"><dir name="Search"><file name="Collection.php" hash="951464361defbde6a302bdd56d67dec1"/></dir></dir></dir><dir name="Eav"><dir name="Entity"><file name="Attribute.php" hash="dd0f38a76f974ca1ec47f5c06ac3c257"/><dir name="Attribute"><dir name="Frontend"><file name="Default.php" hash="2dc8cd4fc5592ba64cfea43f5fe523cc"/></dir></dir></dir><dir name="Mysql4"><dir name="Entity"><file name="Attribute.php" hash="ca1d51a3b6b87ffe50e2f88631aaaf0b"/></dir></dir></dir></dir></dir></dir></target><target name="magelib"><dir name="Varien"><dir name="Data"><dir name="Form"><dir name="Element"><file name="Textfilter.php" hash="34f421cec04b6ed4b011238fdffa3ffb"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

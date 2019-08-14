@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Morningtime TextfieldLayeredNav extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Morningtime
+ * @package    Morningtime_TextfieldLayeredNav
+ * @copyright  Copyright (c) 2009 Morningtime Internet, http://www.morningtime.com
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Morningtime_TextfieldLayeredNav>
+            <version>1.3.2.4.1</version>
+        </Morningtime_TextfieldLayeredNav>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                 <rewrite>
+                    <catalog_product_attribute_edit_tab_main>Morningtime_TextfieldLayeredNav_Block_Adminhtml_Catalog_Product_Attribute_Edit_Tab_Main</catalog_product_attribute_edit_tab_main>
+                    <catalog_product_attribute_edit_tab_options>Morningtime_TextfieldLayeredNav_Block_Adminhtml_Catalog_Product_Attribute_Edit_Tab_Options</catalog_product_attribute_edit_tab_options>
+                    <catalog_product_edit_tab_attributes>Morningtime_TextfieldLayeredNav_Block_Adminhtml_Catalog_Product_Edit_Tab_Attributes</catalog_product_edit_tab_attributes>
+                </rewrite>
+            </adminhtml>
+            <catalog>
+                 <rewrite>
+                    <product_compare_list>Morningtime_TextfieldLayeredNav_Block_Catalog_Product_Compare_List</product_compare_list>
+                </rewrite>
+            </catalog>
+            <catalogsearch>
+                 <rewrite>
+                    <advanced_form>Morningtime_TextfieldLayeredNav_Block_CatalogSearch_Advanced_Form</advanced_form>
+                </rewrite>
+            </catalogsearch>
+        </blocks>
+		<models>
+            <catalog>
+                 <rewrite>
+                    <resource_eav_attribute>Morningtime_TextfieldLayeredNav_Model_Catalog_Resource_Eav_Attribute</resource_eav_attribute>
+                    <entity_attribute>Morningtime_TextfieldLayeredNav_Model_Catalog_Entity_Attribute</entity_attribute>
+					<product>Morningtime_TextfieldLayeredNav_Model_Catalog_Product</product>
+                </rewrite>
+            </catalog>
+            <catalog_resource_eav_mysql4>
+                 <rewrite>
+                    <product>Morningtime_TextfieldLayeredNav_Model_Catalog_Resource_Eav_Mysql4_Product</product>
+                </rewrite>
+            </catalog_resource_eav_mysql4>
+            <catalogindex>
+                 <rewrite>
+                    <indexer_eav>Morningtime_TextfieldLayeredNav_Model_CatalogIndex_Indexer_Eav</indexer_eav>
+                </rewrite>
+            </catalogindex>
+            <catalogrule>
+                 <rewrite>
+                    <rule_condition_product>Morningtime_TextfieldLayeredNav_Model_CatalogRule_Rule_Condition_Product</rule_condition_product>
+                </rewrite>
+            </catalogrule>
+            <catalogsearch>
+                 <rewrite>
+                    <advanced>Morningtime_TextfieldLayeredNav_Model_CatalogSearch_Advanced</advanced>
+                    <mysql4_search_collection>Morningtime_TextfieldLayeredNav_Model_CatalogSearch_Mysql4_Search_Collection</mysql4_search_collection>
+                </rewrite>
+            </catalogsearch>
+            <eav>
+                 <rewrite>
+                    <entity_attribute_frontend_default>Morningtime_TextfieldLayeredNav_Model_Eav_Entity_Attribute_Frontend_Default</entity_attribute_frontend_default>
+                    <entity_attribute>Morningtime_TextfieldLayeredNav_Model_Eav_Entity_Attribute</entity_attribute>
+                </rewrite>
+            </eav>
+            <eav_mysql4>
+                 <rewrite>
+                    <entity_attribute>Morningtime_TextfieldLayeredNav_Model_Eav_Mysql4_Entity_Attribute</entity_attribute>
+                </rewrite>
+            </eav_mysql4>
+		</models>
+    </global>
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Morningtime_TextfieldLayeredNav_Adminhtml before="Mage_Adminhtml">Morningtime_TextfieldLayeredNav_Adminhtml</Morningtime_TextfieldLayeredNav_Adminhtml>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
