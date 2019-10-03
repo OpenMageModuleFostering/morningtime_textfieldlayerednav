@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Until now, you could only use Dropdown and Multiselect attributes for layered navigation. This extension adds a textfield for layered navigation.
